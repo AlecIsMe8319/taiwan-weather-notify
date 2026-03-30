@@ -54,7 +54,9 @@ cp .env.example .env
 ### 4. 啟動本地伺服器
 
 ```bash
-python app.py
+python run.py
+# 或:
+uvicorn weatherbot.app:app --reload --port 5000
 ```
 
 ### 5. 使用 ngrok 讓 Line 能連到你的本地伺服器

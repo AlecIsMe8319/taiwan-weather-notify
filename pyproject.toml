@@ -1,0 +1,22 @@
+[project]
+name = "taiwan-weather-notify"
+version = "0.1.0"
+description = "Line Bot 天氣通知系統"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "flask==3.0.0",
+    "line-bot-sdk==3.11.0",
+    "requests==2.31.0",
+    "geopy==2.4.1",
+    "APScheduler==3.10.4",
+    "python-dotenv==1.0.0",
+    "gunicorn==21.2.0"
+]
+
+[project.scripts]
+weatherbot = "weatherbot.app:app"
+
+[tool.black]
+line-length = 88
